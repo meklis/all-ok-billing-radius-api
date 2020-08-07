@@ -1,0 +1,38 @@
+{
+  "name": "meklis/all-ok-billing-radius-api",
+  "description": "API for all-ok-billing radius",
+  "license": "proprietary",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Max Boyar",
+      "email": "max.boyar.a@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "envPHP\\": "envPHP",
+      "Api\\": "api_v2/src"
+    }
+  },
+  "require": {
+    "mpdf/mpdf": "^8.0",
+    "meklis/switcher-core": "dev-master",
+    "meklis/billing-network-helpers": "dev-master",
+    "meklis/trinity-tv": "dev-master",
+    "vlucas/phpdotenv": "^4.1@dev",
+    "meklis/omo-systems-api-client": "dev-master",
+    "ext-json": "*",
+    "monolog/monolog": "^1.24",
+    "php": ">=7.1",
+    "php-di/php-di": "^6.0",
+    "slim/psr7": "^0.5",
+    "slim/slim": "^4.1",
+    "ramsey/uuid": "^4.0@dev",
+    "tuupola/cors-middleware": "dev-master",
+    "zircote/swagger-php": "dev-master",
+    "meklis/ipv4-subnet-calculator": "^3.1",
+    "ext-pdo": "*"
+  },
+  "minimum-stability": "dev"
+}

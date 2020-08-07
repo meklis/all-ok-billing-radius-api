@@ -1,0 +1,21 @@
+version: '3.7'
+
+
+x-defaults: &defaults
+  privileged: true
+  logging:
+    driver: json-file
+    options:
+      max-size: "50m"
+      max-file: "5"
+  env_file:
+    - ../.env
+  restart: unless-stopped
+
+services:
+  radius-server:
+    <<: *defaults
+    build: .
+    container_name: radius-server
+    ports:
+    - "0.0.0.0:1812:1812/udp"
